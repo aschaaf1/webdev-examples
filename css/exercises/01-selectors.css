@@ -14,6 +14,20 @@ li[class] {
   color: var(--red);
 }
 
+li[id='cat'] {
+  color: var(--teal);
+}
+
+/* ends in g */
+li[class$='g'] {
+  color: var(--violet);
+}
+
+/* starts with p */
+li[class^='p'] {
+  color: var(--green)
+}
+
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
