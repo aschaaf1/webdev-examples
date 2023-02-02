@@ -10,17 +10,12 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
+/* li[class] {
   color: var(--red);
-}
+} */
 
 li[id='cat'] {
   color: var(--teal);
-}
-
-/* ends in g */
-li[class$='g'] {
-  color: var(--violet);
 }
 
 /* starts with p */
@@ -28,8 +23,26 @@ li[class^='p'] {
   color: var(--green)
 }
 
+/* substring of do */
+li[class*="do"] {
+  color: var(--royalblue);
+}
+
+/* ends in g */
+li[class$='g'] {
+  color: var(--violet);
+}
+
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+.first ~ li {
+  color: var(--violet);
+}
+
+.second + li {
+  color: var(--royalblue);
 }

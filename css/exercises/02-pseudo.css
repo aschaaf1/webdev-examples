@@ -2,3 +2,13 @@
   width: 600px;
   margin: 40px auto;
 }
+
+/* pseudo element :: */
+p::first-letter {
+  font-size: 3em;
+}
+
+/* pseaudo class : */
+p:hover {
+  background-color: lightblue;
+}
